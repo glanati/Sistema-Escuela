@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Sistema de alumnado</title>
+<title>Sistema de alumnado</title>	<!-- Testing Egit -->
 
 <link rel="icon" href="icono/favicon.ico">
 
