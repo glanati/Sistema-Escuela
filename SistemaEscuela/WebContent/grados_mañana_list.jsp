@@ -96,16 +96,31 @@
 				  	  	</div>
 				  	</div>
 				<%}else{%>
-				
+						
 				<!-- /.row -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
-                     <!--
-                        <div class="panel-heading">
-                            Grilla
+                    
+                    <% if (!gradosp.getLista().isEmpty() && !grados.getListaTM().isEmpty()){ %>
+						<div class="panel-heading">	<!-- <div class="panel-heading"> -->
+                        	<div class="text-right">
+                        		<div class="text-right">
+									<a href="GradoEdit?do=alta"><button type="button" class="btn btn-primary btn-circle"><i class="fa fa-plus"></i></button></a>
+                     			</div>
+                        	</div>
                         </div>
-                   	 -->  
+					<%}else if (gradosp.getLista().isEmpty() && !grados.getListaTM().isEmpty() ){%>
+						<%Mensaje m1 = AccionesMensaje.getOne(27);%>
+						<!-- MENSAJE INFORMATIVO -->
+					     <div class="bs-example">
+					    	<div class="alert <%=m1.getTipo()%> fade in" role="alert">
+					     	 	<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					     	 	<%=m1.getMensaje()%>
+					  	  	</div>
+					  	</div>
+					<%}%>                    
+                   	                     	 
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="dataTable_wrapper">
@@ -149,12 +164,12 @@
 									<%if (m1 != null){ %> 
 									<td><%= m1.getNombre() + " " + m1.getApellido() %></td>
 									<%}else{%>
-									<td class="warning"> No hay maestro asignado <i class="fa fa-warning"></i></td>
+									<td class="warning"> Asignar <i class="fa fa-warning"></i></td>
 									<%}%>
 									<%if (m2 != null){ %> 
 									<td><%= m2.getNombre() + " " + m2.getApellido() %></td>
 									<%}else{%>
-									<td class="warning"> No hay maestro asignado <i class="fa fa-warning"></i></td>
+									<td class="warning"> Asignar <i class="fa fa-warning"></i></td>
 									<%}%>
 									<td><%= ciclo %></td>		
 									<%if(g.getGrado().equals("Sala 4") || g.getGrado().equals("Sala 5")){%>
@@ -169,11 +184,11 @@
 									<td><strong><a href="MateriaGradoList?do=listar&grado_list=<%=g.getGrado()%>&grado_turno=<%=g.getTurno()%>&grado_año=<%=año%>" ><i class="fa fa-eye"></i> Ver Materias</a></strong></td>
 									<%}}}%>
 									<% if ((g.getGrado().equals("7mo") || año == 0) || m1 == null){%>
-									<td class="warning">No se puede promocionar</td>
+									<td class="warning">No disponible</td>
 									<%}else{ %>
 									<td><a href="GradoEdit?do=promocion&grado_modif=<%=g.getGrado()%>&grado_turno=<%=g.getTurno()%>&año=<%=año%>" onclick="<%="return confirm('Esta seguro que desea promocionar "+  g.getGrado() + "-" + g.getTurno()  +"?');"%>"><strong>Promocionar</strong></a></td>		
 									<% } %>	
-									<td><strong><a href="GradoEdit?do=modificar&grado_modif=<%=g.getGrado()%>&grado_turno=<%=g.getTurno()%>"><i class="fa fa-pencil"></i> Editar</a></strong></td>			
+									<td><strong><a href="GradoEdit?do=modificar&grado_modif=<%=g.getGrado()%>&grado_turno=<%=g.getTurno()%>"><i class="fa fa-pencil"></i></a></strong></td>			
 								</tr>
 								<tbody>
 								<%	 
@@ -209,20 +224,7 @@
   	  </div>
   </div>
  <%}%>
-<% if (!gradosp.getLista().isEmpty() && !grados.getListaTM().isEmpty()){ %>
-<br>
-    <p><strong><a href="GradoEdit?do=alta"><i class="fa fa-edit"></i> Nuevo Curso</a></strong></p>
-<%}else if (gradosp.getLista().isEmpty() && !grados.getListaTM().isEmpty() ){%>
-<br>
-	<%Mensaje m1 = AccionesMensaje.getOne(27);%>
-	<!-- MENSAJE INFORMATIVO -->
-     <div class="bs-example">
-    	<div class="alert <%=m1.getTipo()%> fade in" role="alert">
-     	 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-     	 <%=m1.getMensaje()%>
-  	  	</div>
-  	</div>
-<%}%>
+
 
 	</div>
 	<!-- /#page-wrapper -->
