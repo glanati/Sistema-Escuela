@@ -114,7 +114,7 @@
                                     <a href="#"><i class="fa fa-list"></i> Listado </a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-edit"></i> Nuevo alumno</a>
+                                    <a href="#"><i class="fa fa-plus"></i> Nuevo alumno</a>
                                 </li>
                                 <li>
                                     <a href="#"><i class="fa fa-list-alt"></i> Registro de bajas</a>
@@ -141,7 +141,7 @@
                                     <a href="#"><i class="fa fa-list"></i> Listado </a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-edit"></i> Nuevo maestro</a>
+                                    <a href="#"><i class="fa fa-plus"></i> Nuevo maestro</a>
                                 </li>
                                 <li>
                                     <a href="#"><i class="fa fa-list-alt"></i> Registro de bajas</a>
@@ -156,7 +156,7 @@
                                     <a href="#"><i class="fa fa-list"></i> Listado </a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-edit"></i> Nueva materia</a>
+                                    <a href="#"><i class="fa fa-plus"></i> Nueva materia</a>
                                 </li>
                                 <li>
                                     <a href="#"><i class="fa  fa-times-circle"></i> Materias inactivas</a>
@@ -174,7 +174,7 @@
                                     <a href="#"><i class="fa fa-list"></i> Listado </a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-edit"></i> Nueva entrevista</a>
+                                    <a href="#"><i class="fa fa-plus"></i> Nueva entrevista</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -211,7 +211,7 @@
                                     <a href="#"><i class="fa fa-list"></i> Listado </a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-edit"></i> Nueva citación</a>
+                                    <a href="#"><i class="fa fa-plus"></i> Nueva citación</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -223,7 +223,7 @@
                                     <a href="#"><i class="fa fa-list"></i> Listado </a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-edit"></i> Nueva sanción</a>
+                                    <a href="#"><i class="fa fa-plus"></i> Nueva sanción</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
