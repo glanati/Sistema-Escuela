@@ -111,13 +111,13 @@
                             <a href="#"><i class="fa fa-child"></i> Alumnos <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#"><i class="fa fa-list"></i> Listado </a>
+                                    <a href="menu_alumnos.jsp"><i class="fa fa-list"></i> Listado </a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-plus"></i> Nuevo alumno</a>
+                                    <a href="alumno_edit.jsp?do=nuevo"><i class="fa fa-plus"></i> Nuevo alumno</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-list-alt"></i> Registro de bajas</a>
+                                    <a href="alumnoInactivo?do=listar"><i class="fa fa-list-alt"></i> Registro de bajas</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -138,13 +138,13 @@
                             <a href="#"><i class="fa fa-male"></i> Maestros <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                 				<li>
-                                    <a href="#"><i class="fa fa-list"></i> Listado </a>
+                                    <a href="maestroList"><i class="fa fa-list"></i> Listado </a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-plus"></i> Nuevo maestro</a>
+                                    <a href="maestroEdit?accion=alta"><i class="fa fa-plus"></i> Nuevo maestro</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-list-alt"></i> Registro de bajas</a>
+                                    <a href="MaestroList?tipo=inactivos"><i class="fa fa-list-alt"></i> Registro de bajas</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
